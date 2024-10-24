@@ -8,20 +8,16 @@ public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		PrintService<Integer> print = new PrintService<>();
-		System.out.println("quantos valores? ");
+		PrintService<Integer> pr = new PrintService<>();
+		System.out.print("how many values? ");
 		int valor = sc.nextInt();
+		System.out.println("typer the numbers: ");
 		for(int i=0;i<valor;i++) {
 			int value = sc.nextInt();
-			print.addvalue(value);
+			pr.addvalue(value);
 		}
-		System.out.println("first: "+print.fisrt());
-		print.print();
-		
-		
-		
-		
-		
+		System.out.println("first: "+pr.fisrt());
+		pr.print();
 		
 		sc.close();
 
